@@ -24,7 +24,8 @@ function App() {
     }
       catch(e)
       {
-        alert("failed to fetch data")
+        alert("failed to fetch data");
+        console.log(e);
       }
   },[]);
 
