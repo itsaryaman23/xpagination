@@ -1,0 +1,22 @@
+.btn{
+    background-color: rgb(67,150,123);
+    display: inline;
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:disabled{
+    background-color: rgba(67,150,123,0.7);
+}
+span{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(67,150,123);
+    color: white;
+    display: inline-block;
+    margin: 15px;
+}

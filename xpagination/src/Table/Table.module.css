@@ -1,0 +1,29 @@
+.table{
+    width: 90%;
+    border-collapse: collapse;
+    border: 5px rgb(233,233,233) solid;
+    border-top: none;
+    border-bottom: 2px rgb(67,150,123) solid;
+    text-align: left;
+    font-size: small;
+}
+
+.tHead{
+    font-weight: 700;
+    background-color: rgb(67,150,123);
+}
+th{
+    padding: 10px;
+    border: none;
+    color: white;
+}
+td{ 
+    padding: 12px;
+    border: none;
+    color: rgb(121,121,121);
+    font-weight: 500;
+
+}
+tr{
+    border: 1px rgb(233,233,233) solid;
+}
