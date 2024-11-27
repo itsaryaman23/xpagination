@@ -17,11 +17,11 @@ const Buttons = ({page, setPage, maxPage}) => {
     }
     return (<div>
         <button className={styles.btn}
-         disabled = {page==1}
+        //  disabled = {page==1}
           onClick={decreasePage}>Previous</button>
         <span>{page}</span>
         <button className={styles.btn} 
-        disabled = {page==maxPage} 
+        // disabled = {page==maxPage} 
         onClick={increasePage}>Next</button>
     </div>)
 }
