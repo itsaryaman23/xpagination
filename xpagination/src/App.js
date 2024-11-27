@@ -12,21 +12,22 @@ function App() {
   const [maxPage, setMaxPage] = useState(4);
 
   useEffect(()=>{
-    try{
 
       const getData = async () => {
-        const data = await fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json');
-        const jsData = await data.json();
-        setData(jsData);
+        try{
+          const data = await fetch('https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json');
+          const jsData = await data.json();
+          setData(jsData);
+        }
+        catch(e)
+        {
+
+          alert("failed to fetch data");
+        }
       }
       getData();
       setPage(1);
-    }
-      catch(e)
-      {
-        alert("failed to fetch data");
-        console.log(e);
-      }
+      
   },[]);
 
 
